@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aulas de Scratch</title>
+    <title>Scratchfy | Ping Pong</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header"> <h3>Tutoriais</h3> </div>    
+    <div class="header"> <h1>Scratchfy</h1> <button id="toggleIndice">☰</button></div> 
 
-    <div style="position: absolute; right: 0; height: 3000px;">
-        <div class="indice">
-            <button id="toggleIndice" style="transform: translateX(-100px);">☰ Menu</button>
+        <div class="indice">            
             <h2 style="margin-left: 5%">Conteúdo</h2>
             <ul>
                <li><a href="#pt1">Criar plataforma</a></li>
@@ -36,46 +34,57 @@
                         <li><a href="#pt2">Aparecer o Game Over</a></li>
                     </ul>            
             </ul>
-            </div>
+        </div>
 
-
-    </div>
     <div class="tutorial">
 
         <div class="banner-Img-tuto">
-            <img id="blurred" src="src/aulas_Scratch/pong/demo_banner.png">
-        </div>        
+            <img id="blurred" src="src/aulas_Scratch/pong/demo_banner.png">            
+            <div class="second-Header"> 
+                <h1>Ping Pong no Scratch</h1>   
+                <p>Neste tutorial, vamos aprender a como criar um projeto de ping-pong no scratch.</p>    
+            </div>
 
-        <div class="second-Header"> 
-            <h1>Ping Pong no Scratch</h1>
-            <p>Neste tutorial, vamos aprender a como criar um projeto de ping-pong no scratch.</p>    
-        </div>
+        </div>      
+
         
-        <div id="pt1">
+        <div id="pt1" class="tutorial-section">
             <h2>1- Criando a Plataforma</h2>
             <ul style="font-style: italic; color:gainsboro;">
-                <li>Apagar o Ator que vem de fábrica.</li>
+                <li>Apagar o Gatinho</li>
                 <li>Selecionar um novo Ator.</li>
                 <li>Montar um código para mover a plataforma</li>
             </ul>   
 
-                <div id="pt1-1">                             
-                    <div>
-                        <h3>1.1- Apague o Ator que vem de fábrica</h3>
-                        <p> A não ser que você queira usar o gatinho como sua 
-                        plataforma, ele não será útil para nós. Então vamos deletá-lo</p>
-                    </div>
+            <h3>1.1- Vamos apagar o gatinho</h3>
+            <p>Não quero usar o gatinho neste jogo, então irei deletá-lo, e depois escolher outro Ator</p>
+            <div class="slideshow-container">
+                <div class="mySlides1">
                     <img src="src/aulas_Scratch/Reusable/My Video.gif" class="tutorial-img">
                 </div>
+                          
+                <div class="mySlides1">
+                    <img src="src/aulas_Scratch/aulaCenario-THumb.png" style="width:100%">
+                </div>                        
+                          
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            </div>
 
-                <div id="pt1-2">                             
-                    <div>
-                        <h3>1.2- Selecione um novo Ator</h3>
-                        <p> Agora, clique no botão "Selecione um Ator" para escolhermos o Ator que 
+                        
+        </div>
+        
+
+
+
+        <div id="pt1-2">                             
+            <div>
+                <h3>1.2- Selecione um novo Ator</h3>
+                <p> Agora, clique no botão "Selecione um Ator" para escolhermos o Ator que 
                         servirá como nossa plataforma.</p>
-                    </div>
-                <img src="src/aulas_Scratch//pong/Select_Plataform.gif" class="tutorial-img">
-                </div>       
+            </div>
+            <img src="src/aulas_Scratch//pong/Select_Plataform.gif" class="tutorial-img">
+        </div>       
             
                 <div id="pt1-3">                     
                     <div>
@@ -88,7 +97,7 @@
                 </div>       
         </div>   
 
-        <div id="pt2">
+        <div id="pt2" class="tutorial-section">
             <h2>2- Criando a Bolinha</h2>
             <ul style="font-style: italic; color:gainsboro;">
                 <li>Selecionar um Ator para a Bolinha.</li>
